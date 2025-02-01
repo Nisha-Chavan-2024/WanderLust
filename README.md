@@ -26,6 +26,10 @@ Wanderlust is a travel-related website developed using the MERN stack and MVC ar
 
 **Hosting:** Render (Backend)
 
+## 📷 Screenshots  
+
+![Output](https://github.com/user-attachments/assets/b6cc2563-67fb-4504-8b4b-dbbac79d51d9)
+![Output](https://github.com/user-attachments/assets/0272e7d4-fd80-47fe-a242-7e1e1b973072)
 
 # Deployment
 
@@ -44,8 +48,7 @@ To run the project locally, follow these steps:
 
 # Clone the repository:
 
-git clone https://github.com/yourusername/wanderlust.git
-
+git clone https://github.com/Nisha-Chavan-2024/WanderLust.git
 
 # Install dependencies:
 
