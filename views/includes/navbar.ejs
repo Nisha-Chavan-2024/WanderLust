@@ -1,5 +1,5 @@
 <style>
-  .btn-search{
+  /* .btn-search{
     background-color: #ed3d6f;
     color: #fff;
     border-radius: 25px;
@@ -20,7 +20,79 @@
     border-radius: 25px;
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
+  } */
+  .btn-search {
+    background-color: #ed3d6f;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 1rem 0 1rem;
   }
+
+  .btn-search:hover {
+    background-color: #ed3d6f;
+    color: #fff;
+  }
+
+  .btn-search i {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+
+  .inp {
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 1rem;
+  }
+
+  /* Media query for mobile screens */
+  @media (max-width: 768px) {
+    .inp {
+      font-size: 0.875rem; /* Smaller font size for mobile */
+      padding: 0.5rem 2rem 0.5rem 2rem; /* Adjust padding for mobile */
+    }
+
+    .navbar-nav {
+      margin-top: 0.5rem;
+    }
+
+    .navbar-nav.ms-auto {
+      margin-left: 0;
+    }
+
+    .navbar-collapse {
+      text-align: start;
+    }
+
+    .btn-search {
+      padding: 0.5rem 1rem; /* Adjust button padding */
+      font-size: 0.875rem; /* Smaller button text for mobile */
+    }
+
+    .nav-link {
+      font-size: 0.875rem; /* Smaller nav link text */
+      padding: 0.5rem 0;
+    }
+
+    .navbar-nav .nav-link {
+      text-align: start;
+    }
+  }
+
+  /* Prevent layout shift on navbar toggle */
+  .navbar {
+    position: relative; /* Prevent layout shifting */
+    z-index: 10; /* Ensure navbar stays on top */
+  }
+
+  /* Prevent page content below navbar from shifting when toggling */
+  .navbar-collapse {
+    padding-top: 0; /* Remove any extra top padding on collapse */
+  }
+
+  .navbar-toggler {
+    z-index: 20; /* Make sure the toggler button stays above other content */
+  }
+
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
@@ -36,6 +108,8 @@
          
           
         </div>
+
+       
         <div  class="navbar-nav ms-auto">
           <form class="d-flex" role="search">
             <input class="form-control me-2 inp" type="search" placeholder="Search Destination">

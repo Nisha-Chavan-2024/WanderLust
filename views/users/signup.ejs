@@ -1,6 +1,24 @@
 <% layout("/layouts/boilerplate") %>
+<style>
+    @media screen and (max-width: 768px) {
+   .auth-buttons {
+     top: 10px;
+     right: 10px;
+     padding: 8px;
+   }
+ 
+   .h1 {
+     margin-top: 150px; /* Extra space for mobile */
+   }
+
+   .sign{
+    margin-bottom: 20px;
+    margin-left: 20px;
+   }
+ }
+ </style>
 <div class="row mt-3">
-    <h1 class="col-6 offset-4 mb-3" style="color: #ed3d6f;"><b>SignUp on Wanderlust</b></h1>
+    <h1 class="col-6 offset-4 mb-3 h1" style="color: #ed3d6f;"><b>SignUp on Wanderlust</b></h1>
     <div class="col-6 offset-3">
 
         <form action="/signup" method="POST" novalidate class="needs-validation">
@@ -26,6 +44,6 @@
               
             </div>
 
-            <button class="btn btn-dark btn-add offset-5 mt-3">SignUp</button>
+            <button class="btn btn-dark btn-add offset-5 mt-3 sign">SignUp</button>
     </div>
 </div>

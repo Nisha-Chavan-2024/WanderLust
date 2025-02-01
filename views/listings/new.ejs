@@ -1,9 +1,23 @@
 <% layout("/layouts/boilerplate") %>
+<style>
+   @media screen and (max-width: 768px) {
+  .auth-buttons {
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+  }
+
+  .h3 {
+    margin-top: 150px; /* Extra space for mobile */
+  }
+}
+</style>
+
 <body>
     <br>
     <div class="row">
         <div class="col-8 offset-2">
-    <h3>Create New Listing</h3>
+    <h3 class="h3">Create New Listing</h3>
   
        
     <form action="/listings" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">

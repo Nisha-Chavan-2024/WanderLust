@@ -1,6 +1,68 @@
 <% layout("/layouts/boilerplate") %>
 
 <style>
+
+/* Ensure navbar and login section do not overlap */
+.navbar {
+  position: relative;
+  z-index: 1000;
+  padding: 10px;
+}
+
+/* Fix Sign Up / Log In positioning */
+.auth-buttons {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  z-index: 1100;
+}
+
+/* Adjust filters section */
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Reduce space */
+}
+
+/* Reduce empty space on larger screens */
+@media screen and (min-width: 1024px) {
+  #filters {
+    margin-top: 10px; /* Less empty space */
+    justify-content: start; /* Align to the left */
+  }
+
+  .auth-buttons {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: flex;
+    justify-content: end;
+    width: auto;
+  }
+}
+
+/* Ensure proper spacing for mobile */
+@media screen and (max-width: 768px) {
+  .auth-buttons {
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+  }
+
+  #filters {
+    margin-top: 150px; /* Extra space for mobile */
+  }
+}
+
+
+
+
+
   #filters{
     display: flex;
     flex-wrap: wrap;
